@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microserviceapplication:
+    image: ${DOCKER_REGISTRY-}microserviceapplication
+    build:
+      context: .
+      dockerfile: Dockerfile
